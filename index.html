@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./calculator.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <div class="page_container">
+
+        <div class="calculator_container">
+
+        <div class="calculator_result" id="calculator_result"></div>
+            <div name="addition" class="container">
+                <input type="text" id="addition_number1" />
+                <p class="symbol-wrap">
+                    &plus;
+                </p>
+                <input type="text" id="addition_number2" />
+                <button id="addition_submit" onclick="GetSum()">Add</button>
+            </div>
+
+            <div name="subtraction" class="container">
+                <input type="text" id="subtraction_number1" />
+                <p class="symbol-wrap">
+                        &minus;
+                </p>
+                <input type="text" id="subtraction_number2" />
+                <button id="subtraction_submit" onclick="GetDifference()">Subtract</button>
+            </div>
+
+            <div name="multiplication" class="container">
+                <input type="text" id="multiplication_number1" />
+                <p class="symbol-wrap">
+                        &times;
+                </p>
+                <input type="text" id="multiplication_number2" />
+                <button id="multiplication_submit" onclick="GetProduct()">Multiply</button>
+            </div>
+
+            <div name="division" class="container">
+                <input type="text" id="division_number1" />
+                <p class="symbol-wrap">
+
+                        &divide;
+                </p>
+                <input type="text" id="division_number2" />
+                <button id="division_submit" onclick="GetQuotient()">Divide</button>
+                <div id="division_result" class="result"></div>
+            </div>
+
+            <div name="exponent" class="container">
+                <input type="text" id="exponent_number1" />
+                <p class="symbol-wrap">
+                        &and;
+                </p>
+                <input type="text" id="exponent_number2" />
+                <button id="exponent_submit" onclick="Exponent()">Exponent</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
